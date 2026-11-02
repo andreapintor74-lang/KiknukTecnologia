@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Risorse di Tecnologia: teoria, disegno, video e laboratori per la scuola secondaria di primo grado.">
+  <meta name="theme-color" content="#153853">
+  <title>Risorse di Tecnologia</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="resources-data.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#/" aria-label="Risorse di Tecnologia, home">
+      <span class="brand-mark" aria-hidden="true">TEC</span>
+      <span>
+        <strong>Risorse di TECNOLOGIA</strong>
+        <small>Utilità e risorse a servizio dell'alunno</small>
+      </span>
+    </a>
+    <label class="search-box">
+      <span class="visually-hidden">Cerca in pagine e materiali</span>
+      <span aria-hidden="true">⌕</span>
+      <input id="search" type="search" placeholder="Cerca in pagine e materiali…" autocomplete="off">
+      <kbd>CTRL K</kbd>
+    </label>
+  </header>
+
+  <div class="site-layout">
+    <aside class="sidebar">
+      <p class="sidebar-label">Navigazione del sito</p>
+      <nav id="site-navigation" aria-label="Navigazione principale"></nav>
+    </aside>
+
+    <main id="main-content">
+      <div id="load-warning" class="load-warning" role="alert" hidden></div>
+      <section id="search-results" class="search-results" aria-live="polite" hidden>
+        <p id="search-status" class="eyebrow">RISULTATI</p>
+        <div id="search-result-list"></div>
+      </section>
+      <article id="page-content" aria-live="polite"></article>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <span>Risorse di Tecnologia</span>
+    <span>Testi e immagini organizzati secondo la struttura originale del sito.</span>
+  </footer>
+</body>
+</html>
